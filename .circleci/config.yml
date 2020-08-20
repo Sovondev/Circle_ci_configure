@@ -7,4 +7,4 @@ jobs:
       - run:
           name: The First Step
           command: |
-            gcc helloworld.c -o Output
+            gcc home/"testgit repo"/repo_Clearner/helloworld.c -o Output
