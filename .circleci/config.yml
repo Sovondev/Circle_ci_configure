@@ -12,10 +12,10 @@ workflows:
     jobs:
       build:
         docker:
-          - image: gcc
+          image: gcc
           steps:
-            - run:
-                name: The First Step
-                command: gcc *.c -o Output
+            run:
+              name: The First Step
+              command: gcc *.c -o Output
 
       #- welcome/run
