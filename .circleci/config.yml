@@ -6,6 +6,4 @@ jobs:
     steps:
       - run:
           name: The First Step
-          command: |
-            cd..
-            gcc helloworld.c -o Output
+          command: gcc -o Output helloworld.c 
