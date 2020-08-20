@@ -2,9 +2,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: gcc:latest
+      - image: ubuntu:latest
     steps:
       - run:
           name: The First Step
           command: |
-            gcc home/"testgit repo"/repo_Clearner/helloworld.c -o Output
+            cd..
+            gcc helloworld.c -o Output
