@@ -2,8 +2,8 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ubuntu:latest
+      - image: gcc:latest
     steps:
       - run:
           name: The First Step
-          command: gcc -o Output helloworld.c 
+          command: gcc:latest gcc -o output helloworld.c 
