@@ -10,7 +10,7 @@ jobs:
           command: apt-get update
       - run:
           name: "install gcc"
-          command: apt-get install gcc
+          command: apt-get install -y gcc
       - run:
           name: "Run C program"
           command: gcc -o output helloworld.c
