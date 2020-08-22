@@ -2,15 +2,9 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ubuntu:latest
+      - image: gcc:4.9
     steps:
       - checkout
       - run:
-          name: "update apt-get"
-          command: apt-get update
-      - run:
-          name: "install gcc"
-          command: apt-get install -y gcc
-      - run:
-          name: "Run C program"
-          command: gcc -o output helloworld.c
+          name: "compile"
+          command: gcc hellowold.c - output
