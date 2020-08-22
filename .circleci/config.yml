@@ -5,6 +5,8 @@ jobs:
       - image: gcc:4.9
     steps:
       - checkout
+      - setup_remote_docker: 
+         docker_layer_caching: true
       - run:
           name: "compile"
           command: gcc helloworld.c -o output
